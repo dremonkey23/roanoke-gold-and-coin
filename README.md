@@ -64,8 +64,8 @@ This is plain static HTML, so it can be published quickly with:
 
 No framework or build step required.
 
-Publish this repo with GitHub Pages using the **Deploy from a branch** option:
-- Branch: `main`
-- Folder: `/ (root)`
+This repo is now published with classic GitHub Pages from the `gh-pages` branch.
+
+If you update the site later, push the static files to `gh-pages` again or reconfigure GitHub Pages in repo settings.
 
 Because this is plain static HTML, no build step is needed.
