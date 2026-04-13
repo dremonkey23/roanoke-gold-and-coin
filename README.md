@@ -64,7 +64,8 @@ This is plain static HTML, so it can be published quickly with:
 
 No framework or build step required.
 
-A GitHub Actions Pages workflow is included at:
-- `.github/workflows/deploy-pages.yml`
+Publish this repo with GitHub Pages using the **Deploy from a branch** option:
+- Branch: `main`
+- Folder: `/ (root)`
 
-Once this repo is pushed to GitHub and Pages is set to **GitHub Actions**, each push to `main` will redeploy the site automatically.
+Because this is plain static HTML, no build step is needed.
