@@ -335,11 +335,6 @@
       line-height: 1.65;
     }
 
-    .status-row strong {
-      display: block;
-      line-height: 1.55;
-    }
-
     .hero-panel ul {
       list-style: none;
       padding: 0;
@@ -644,16 +639,15 @@
 
     .contact-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 24px;
       margin-top: 34px;
     }
 
-    .contact-card,
-    .status-card {
+    .contact-card {
       background: var(--surface);
-      border-radius: 24px;
-      padding: 30px;
+      border-radius: 28px;
+      padding: 42px;
       border: 1px solid var(--line);
       box-shadow: var(--shadow-soft);
     }
@@ -666,9 +660,9 @@
 
     .contact-item {
       display: grid;
-      grid-template-columns: 110px 1fr;
-      gap: 16px;
-      padding-bottom: 16px;
+      grid-template-columns: 160px 1fr;
+      gap: 24px;
+      padding-bottom: 18px;
       border-bottom: 1px solid var(--line);
     }
 
@@ -679,30 +673,8 @@
       color: var(--ink-muted);
     }
 
-    .contact-item strong,
-    .status-card strong {
-      font-size: 1.08rem;
-    }
-
-    .status-stack {
-      display: grid;
-      gap: 16px;
-      margin-top: 16px;
-    }
-
-    .status-row {
-      padding: 16px 18px;
-      border-radius: 18px;
-      background: var(--surface-alt);
-    }
-
-    .status-row small {
-      display: block;
-      color: var(--ink-muted);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 6px;
+    .contact-item strong {
+      font-size: 1.12rem;
     }
 
     .site-footer {
@@ -777,7 +749,6 @@
       section { padding: 72px 0; }
       .cta-shell,
       .contact-card,
-      .status-card,
       .review-card,
       .trust-item,
       .why-card,
@@ -842,7 +813,7 @@
               </div>
               <div class="fact-card">
                 <strong>Coins & collections</strong>
-                <span>Fair, straightforward appraisals</span>
+                <span>Appraisals by appointment</span>
               </div>
             </div>
           </div>
@@ -860,15 +831,15 @@
             </div>
             <h3>Why customers choose us</h3>
             <p>
-              Whether you are selling a few pieces or a larger collection, the process stays simple,
-              professional, and focused on the value of the metals.
+              Call first, bring the items you want reviewed, and get a clear explanation of weight,
+              condition, and pricing.
             </p>
             <ul>
               <li>Honest, no-pressure conversations</li>
-              <li>Clear focus on precious metals and coins</li>
+              <li>Gold, silver, platinum, palladium, bullion, and coins</li>
               <li>Competitive offers based on the market</li>
               <li>Appointment-only visits for focused, one-on-one service</li>
-              <li>Local Roanoke reputation backed by reviews</li>
+              <li>4.9 Google Maps rating</li>
             </ul>
             <a class="btn btn-outline" href="tel:+15409047158">Call to schedule</a>
           </aside>
@@ -883,15 +854,15 @@
           <span>Gold, silver, platinum, palladium, bullion, and coins.</span>
         </div>
         <div class="trust-item">
-          <strong>Local credibility</strong>
-          <span>Positioned for Roanoke and the surrounding valley.</span>
+          <strong>Roanoke area</strong>
+          <span>Serving Roanoke and the surrounding valley by appointment.</span>
         </div>
         <div class="trust-item">
-          <strong>Honest appraisals</strong>
-          <span>Simple, transparent conversations about value.</span>
+          <strong>Pricing explained</strong>
+          <span>Ask how weight, condition, and market prices affect value.</span>
         </div>
         <div class="trust-item">
-          <strong>Easy next step</strong>
+          <strong>Schedule first</strong>
           <span>Call or email to schedule an appointment-only visit.</span>
         </div>
       </div>
@@ -1099,7 +1070,7 @@
         <div class="contact-grid">
           <article class="contact-card">
             <h3>Precious Metal and Coins</h3>
-            <p class="section-copy" style="margin-top:10px; max-width:48ch;">
+            <p class="section-copy" style="margin-top:10px; max-width:72ch;">
               Serving Roanoke by appointment with appraisals for gold, silver, platinum, palladium,
               bullion, and coins.
             </p>
@@ -1117,7 +1088,7 @@
                 <span>Email</span>
                 <div>
                   <strong>PreciousMetalandCoins@gmail.com</strong>
-                  <p style="color:var(--ink-muted); margin-top:4px;">Good for follow-ups, collections, and appointment requests</p>
+                  <p style="color:var(--ink-muted); margin-top:4px;">Send collection details, photos, follow-ups, or appointment requests</p>
                 </div>
               </div>
 
@@ -1125,33 +1096,16 @@
                 <span>Google Maps listing</span>
                 <div>
                   <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Precious%20Metal%20and%20Coins%206701%20Peters%20Creek%20Rd%20Unit%20109%20Roanoke%20VA%2024019" target="_blank" rel="noopener">By Appointment Only, 6701 Peters Creek Rd Unit #109, Roanoke, VA 24019</a></strong>
-                  <p style="color:var(--ink-muted); margin-top:4px;">Use the current Google Maps address and call before visiting; appointments are required.</p>
+                  <p style="color:var(--ink-muted); margin-top:4px;">Appointments are required at this address. Call before coming to the shop.</p>
                 </div>
               </div>
             </div>
-          </article>
 
-          <aside class="status-card">
-            <h3>Visit information</h3>
-            <div class="status-stack">
-              <div class="status-row">
-                <small>Appointments only</small>
-                <strong>Visits are by appointment only. Call before coming to the shop.</strong>
-              </div>
-              <div class="status-row">
-                <small>Email</small>
-                <strong>Use email for collections, follow-ups, and appointment requests.</strong>
-              </div>
-              <div class="status-row">
-                <small>Current address</small>
-                <strong>By Appointment Only, 6701 Peters Creek Rd Unit #109, Roanoke, VA 24019.</strong>
-              </div>
-            </div>
-            <div style="margin-top:22px; display:grid; gap:12px;">
+            <div class="header-actions" style="justify-content:flex-start; flex-wrap:wrap; margin-top:28px;">
               <a class="btn btn-primary" href="tel:+15409047158">Call for an appraisal</a>
               <a class="btn btn-outline" href="mailto:PreciousMetalandCoins@gmail.com">Send an email</a>
             </div>
-          </aside>
+          </article>
         </div>
       </div>
     </section>
