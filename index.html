@@ -359,6 +359,8 @@
 
     section { padding: 90px 0; }
 
+    section[id] { scroll-margin-top: 110px; }
+
     .trust-bar {
       padding: 18px 0;
     }
@@ -615,28 +617,6 @@
       font-weight: 600;
     }
 
-    .cta-band {
-      padding-top: 0;
-    }
-
-    .cta-shell {
-      background: linear-gradient(145deg, #f8f2e7, #fff);
-      border: 1px solid rgba(184, 138, 68, 0.18);
-      border-radius: 30px;
-      padding: 40px;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 24px;
-      align-items: center;
-      box-shadow: var(--shadow-soft);
-    }
-
-    .cta-shell p {
-      color: var(--ink-soft);
-      margin-top: 14px;
-      max-width: 50ch;
-    }
-
     .contact-grid {
       display: grid;
       grid-template-columns: minmax(0, 1fr);
@@ -711,7 +691,6 @@
       .why-grid,
       .reviews-grid,
       .contact-grid,
-      .cta-shell,
       .process-grid,
       .metals-grid {
         grid-template-columns: 1fr 1fr;
@@ -722,7 +701,6 @@
     @media (max-width: 820px) {
       .site-header .inner,
       .footer-line,
-      .cta-shell,
       .process-grid,
       .trust-grid,
       .why-grid,
@@ -747,7 +725,6 @@
       .hero-copy p { font-size: 1.06rem; }
       .contact-item { grid-template-columns: 1fr; gap: 6px; }
       section { padding: 72px 0; }
-      .cta-shell,
       .contact-card,
       .review-card,
       .trust-item,
@@ -1035,25 +1012,6 @@
             </p>
             <footer>Returning Google customer · 5★</footer>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-band">
-      <div class="container">
-        <div class="cta-shell">
-          <div>
-            <span class="eyebrow">Ready to talk metals?</span>
-            <h2 style="max-width:13ch; margin-top:18px;">Have gold, silver, platinum, palladium, or coins to buy, sell, or trade?</h2>
-            <p>
-              Call or email to ask questions, discuss a collection, or schedule an appointment-only
-              visit.
-            </p>
-          </div>
-          <div class="header-actions" style="justify-content:flex-start; flex-wrap:wrap;">
-            <a class="btn btn-primary" href="tel:+15409047158">Call for an appraisal</a>
-            <a class="btn btn-outline" href="mailto:PreciousMetalandCoins@gmail.com">Email us</a>
-          </div>
         </div>
       </div>
     </section>
